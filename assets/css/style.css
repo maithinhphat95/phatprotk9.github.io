@@ -62,7 +62,7 @@ body{
     box-shadow: 5px 5px 10px #38A3A5 ;
     cursor: pointer;
 }
-.avatar_container:hover{
+.avatar-container:hover{
     cursor: pointer;
     opacity: 0.8;
 }
