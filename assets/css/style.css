@@ -1,0 +1,171 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+body{
+    margin: 0;    
+    background-color: #ccc;
+    padding: 16px;
+}
+
+
+/*  Form A4: 210 x 297 => 1200px x 1697px (1700px) */
+/*  
+    header: 100px
+    content: 1500px
+    footer: 100px
+*/
+/* Color concept: https://colorhunt.co/palette/22577a38a3a557cc9980ed99 
+    #22577A, #38A3A5, #57CC99, #80ED99
+*/
+.main{
+    --layout-width: 1200px;
+    --numcolumn: 3;
+    /* padding: 16px; */
+    margin: auto;
+    box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.3);
+    max-width: var(--layout-width);
+
+   
+}
+
+.content{
+    --basewidth: calc(var(--layout-width) / var(--numcolumn));
+    height: 1500px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(var(--numcolumn), 1fr);
+    grid-template-rows: var(--basewidth) repeat(5, 1fr);
+    grid-auto-flow: column;
+    background-image: url(./assets/images/Background.jpg);
+    /* background-size: var(--layout-width) auto; */
+    background-size: cover;
+}
+.avatar_container{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background: linear-gradient(to bottom right, #0f4163, #38A3A5, #57CC99, #80ED99 );
+    margin: auto;
+    box-shadow: 5px 5px 10px #38A3A5 ;
+    cursor: pointer;
+}
+.avatar_container:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.avatar{
+    width: 100%;
+    height: 100%;
+    border: linear-gradient( );
+    border-radius: 50%;
+    background-image: url(./assets/images/Avatar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 100%;
+}
+.objective{
+    grid-row: 2 / 4;
+    border: black solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.objective .testbox{
+    width: 50%;
+    height: 50%;
+    background: darkblue    ;
+    box-shadow: 20px 20px 50px red;
+    /* box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.3); */
+    /* syntax: 
+    Box-shadow: h-offset v-offset blur spread color (optional); 
+    h-offset: offset the shadow follow horizontal direction
+    v-offset: offset the shadow follow vertical direction
+    blur (px): higher value, higher blur
+    spread (px): add the bonus shadow around the original shadow
+    */
+}
+
+
+.skill{
+    grid-row: 4 / 6;
+    border: black solid 1px;
+
+
+}
+
+.reference{
+    grid-row: 6 / 7;
+    border: black solid 1px;
+
+}
+
+.information{
+    grid-row: 1 / 2;
+    grid-column: 2 / 4;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+
+}
+.icon{
+    min-width: 32px;
+    text-align: center;
+    opacity: 0.8;
+}
+.name{
+    font-size: 48px;
+    text-transform: uppercase;
+    color: #173a52;
+    line-height: 1.5;
+    text-shadow: 4px 4px 5px #38A3A5;
+    font-weight: 600;
+}
+.lastname{
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+.address, .birthday, .phone, .email{
+    display: inline-block;
+    font-weight: 200;
+    line-height: 1.5;
+    padding-right: 16px;
+}
+
+.education{
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    border: black solid 1px;
+}
+
+.experience{
+    grid-row: 3 / 6;
+    grid-column: 2 / 4;
+    border: black solid 1px;
+}
+
+
+
+.footer{
+    max-width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    display: grid;
+    background-color: #57CC99;
+}
