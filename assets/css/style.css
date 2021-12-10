@@ -43,7 +43,7 @@ body{
     grid-template-columns: repeat(var(--numcolumn), 1fr);
     grid-template-rows: var(--basewidth) repeat(5, 1fr);
     grid-auto-flow: column;
-    background-image: url(/assets/images/Background.jpg);
+    background-image: url(./assets/images/Background.jpg);
     /* background-size: var(--layout-width) auto; */
     background-size: cover;
 }
@@ -71,7 +71,7 @@ body{
     height: 100%;
     border: linear-gradient( );
     border-radius: 50%;
-    background-image: url(/assets/images/Avatar.jpg);
+    background-image: url(./assets/images/Avatar.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position-x: 100%;
