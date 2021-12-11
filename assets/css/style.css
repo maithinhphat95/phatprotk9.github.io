@@ -1,3 +1,14 @@
+/*  Form A4: 210 x 297 => 1200px x 1697px (1700px) */
+/*  
+    header: 100px
+    content: 1500px
+    footer: 100px
+*/
+/* Color concept: https://colorhunt.co/palette/22577a38a3a557cc9980ed99 
+    #22577A, #38A3A5, #57CC99, #80ED99
+*/
+
+
 /* Reset CSS */
 *{
     padding: 0;
@@ -13,17 +24,11 @@ body{
     background-color: #ccc;
     padding: 16px;
 }
+/* Common CSS */
+.uppercase{
+    text-transform: uppercase;
+}
 
-
-/*  Form A4: 210 x 297 => 1200px x 1697px (1700px) */
-/*  
-    header: 100px
-    content: 1500px
-    footer: 100px
-*/
-/* Color concept: https://colorhunt.co/palette/22577a38a3a557cc9980ed99 
-    #22577A, #38A3A5, #57CC99, #80ED99
-*/
 .main{
     --layout-width: 1200px;
     --numcolumn: 3;
@@ -31,8 +36,6 @@ body{
     margin: auto;
     box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.3);
     max-width: var(--layout-width);
-
-   
 }
 
 .content{
@@ -46,6 +49,15 @@ body{
     background-image: url(/assets/images/Background.jpg);
     /* background-size: var(--layout-width) auto; */
     background-size: cover;
+}
+.content-header{
+    width: 100%;
+    height: 50px;
+    background-color: #80ED99;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    font-size: 24px;
 }
 .avatar-container{
     grid-row: 1 / 2;
@@ -71,48 +83,41 @@ body{
     height: 100%;
     border-radius: 50%;
     background-image: url(/assets/images/Avatar.jpg);
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position-x: 100%;
 }
-.objective{
-    grid-row: 2 / 4;
-    border: black solid 1px;
+.container{
+    padding: 20px;
+    /* border: black solid 1px; */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.objective-container{
+    grid-row: 2 / 4;
+    
+}
 
-.objective .testbox{
-    width: 50%;
-    height: 50%;
-    background: darkblue    ;
-    box-shadow: 20px 20px 50px red;
-    /* box-shadow: 0 0 16px 8px rgba(0, 0, 0, 0.3); */
-    /* syntax: 
-    Box-shadow: h-offset v-offset blur spread color (optional); 
-    h-offset: offset the shadow follow horizontal direction
-    v-offset: offset the shadow follow vertical direction
-    blur (px): higher value, higher blur
-    spread (px): add the bonus shadow around the original shadow
-    */
+.objective, .skill, .reference, .education, .experience{
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background-color: rgb(230, 230, 230);
+    border-radius: 4px;
+    box-shadow: 4px 4px 10px #ccc;
 }
 
 
-.skill{
+.skill-container{
     grid-row: 4 / 6;
-    border: black solid 1px;
-
-
 }
 
-.reference{
+.reference-container{
     grid-row: 6 / 7;
-    border: black solid 1px;
-
 }
 
-.information{
+.information-container{
     grid-row: 1 / 2;
     grid-column: 2 / 4;
     display: flex;
