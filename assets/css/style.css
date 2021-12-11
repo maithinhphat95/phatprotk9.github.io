@@ -106,16 +106,12 @@ body{
     border-radius: 4px;
     box-shadow: 4px 4px 10px #ccc;
 }
-
-
 .skill-container{
     grid-row: 4 / 6;
 }
-
 .reference-container{
     grid-row: 6 / 7;
 }
-
 .information-container{
     grid-row: 1 / 2;
     grid-column: 2 / 4;
@@ -125,7 +121,6 @@ body{
     justify-content: center;
     text-align: center;
     font-size: 20px;
-
 }
 .icon{
     min-width: 32px;
