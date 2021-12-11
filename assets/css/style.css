@@ -96,7 +96,6 @@ body{
 }
 .objective-container{
     grid-row: 2 / 4;
-    
 }
 
 .objective, .skill, .reference, .education, .experience{
@@ -163,8 +162,6 @@ body{
     grid-column: 2 / 4;
     border: black solid 1px;
 }
-
-
 
 .footer{
     max-width: 1200px;
