@@ -17,12 +17,14 @@
 }
 html{
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 body{
     margin: 0;    
     background-color: #ccc;
     padding: 16px;
+    font-size: 1.25rem;
+
 }
 /* Common CSS */
 .uppercase{
@@ -250,10 +252,15 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-flow: column;
 }
 .footer-container a{
+    display: inline-block;
     color: black;
-    font-size: 24px;
-    width: 50px;
+    font-size: 36px;
+    width: 48px;
     text-align: center;
+}
+.footer-container a:hover {
+    opacity: 0.6;
 }
