@@ -244,11 +244,16 @@ body{
 }
 
 .footer-container{
-    /* max-width: 1200px; */
-    /* height: 200px; */
-    /* margin: 0 auto; */
-    /* display: grid; */
     grid-row: 9 / 10;
-    grid-column: span 3;
+    grid-column: 1 / span 3;
     background-color: #57CC99;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-container a{
+    color: black;
+    font-size: 24px;
+    width: 50px;
+    text-align: center;
 }
