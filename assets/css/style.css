@@ -223,6 +223,14 @@ body{
     font-size: 20px;
     line-height: 1.5;
 }
+
+.experience-container{
+    grid-row: 4 / 9;
+    grid-column: 2 / 4;
+    /* border: black solid 1px; */
+}
+.experience-text{
+}
 .project-list{
     padding-left: 30px;
 }
@@ -234,14 +242,6 @@ body{
     cursor: pointer;
     color: black;
 }
-.experience-container{
-    grid-row: 4 / 9;
-    grid-column: 2 / 4;
-    /* border: black solid 1px; */
-}
-.experience-text{
-}
-
 
 .footer-container{
     /* max-width: 1200px; */
