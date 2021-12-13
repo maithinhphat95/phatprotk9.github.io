@@ -14,6 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    line-height: 1.5;
 }
 html{
     font-family: 'Roboto', sans-serif;
@@ -36,10 +37,17 @@ body{
 .margintop-16{
     margin-top: 16px;
 }
+.marginbottom-16{
+    margin-bottom: 16px;
+}
+
 .paddingleft-16{
     padding-left: 16px;
 }
-.itlaic-text{
+.paddingleft-32{
+    padding-left: 32px;
+}
+.italic-text{
     font-style: italic;
 }
 .bold-text{
@@ -120,7 +128,7 @@ body{
     align-items: center;
 }
 .objective-container{
-    grid-row: 2 / 5;
+    grid-row: 2 / span 2;
 }
 
 .objective, .skill, .reference, .education, .experience{
@@ -138,10 +146,10 @@ body{
     line-height: 1.5;
 }
 .skill-container{
-    grid-row: 5 / 7;
+    grid-row: span 3;
 }
 .reference-container{
-    grid-row: 7 / 9;
+    grid-row: span 2;
 }
 .information-container{
     grid-row: 1 / 2;
@@ -217,7 +225,7 @@ body{
 }
 
 .school-result, .vtd-cource{
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .high-school{
 }
