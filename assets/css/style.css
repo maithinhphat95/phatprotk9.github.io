@@ -44,6 +44,9 @@ body{
 .paddingleft-16{
     padding-left: 16px;
 }
+.paddingleft-24{
+    padding-left: 24px;
+}
 .paddingleft-32{
     padding-left: 32px;
 }
@@ -82,7 +85,7 @@ body{
 .content-header{
     width: 100%;
     height: 50px;
-    padding-left: 20px;
+    padding-left: 16px;
     background-color: #57CC99;
     display: flex;
     align-items: center;
@@ -195,7 +198,6 @@ body{
 .address, .birthday, .phone, .email{
     display: inline-block;
     font-weight: 200;
-    line-height: 1.5;
     padding-right: 16px;
 }
 
@@ -225,8 +227,9 @@ body{
 }
 
 .school-result, .vtd-cource{
-    /* margin-left: 30px; */
+
 }
+
 .high-school{
 }
 .school-result li, .vtd-cource li{
@@ -269,4 +272,7 @@ body{
 }
 .footer-container a:hover {
     opacity: 0.6;
+}
+.contact{
+    font-size: 1.5rem;
 }
