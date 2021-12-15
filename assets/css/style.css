@@ -210,6 +210,8 @@ body{
 
 .school, .major, .company, .dept{
     display: inline-block;
+    text-decoration: none;
+    color: black;
 }
 .school-address, .school-time, .company-address, .company-time{
     display: inline;
@@ -247,6 +249,9 @@ body{
     text-decoration: none;
     cursor: pointer;
     color: black;
+}
+.job-position{
+    font-style: normal;
 }
 
 .footer-container{
