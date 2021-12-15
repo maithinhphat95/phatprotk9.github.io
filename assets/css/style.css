@@ -208,12 +208,14 @@ body{
     grid-column: 2 / 4;
     /* border: black solid 1px; */
 }
-
-
 .school, .major, .company, .dept{
     display: inline-block;
     text-decoration: none;
     color: black;
+}
+.company{
+    text-decoration: underline;
+    text-underline-offset: 0.2rem;
 }
 .school-address, .school-time, .company-address, .company-time{
     display: inline;
